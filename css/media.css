@@ -35,12 +35,74 @@
     max-width: 356px;
   }
 
+  /* =========HERO SECTION======== */
+
   .hero {
     max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
   }
+
+  /* =========FOOTER======== */
+
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+    width: 453px;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+  .subscribe-button {
+    margin-left: 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-left: 93px;
+  }
+
+  .subscribe-wrap {
+    margin: 0;
+    text-align: left;
+  }
+
+  .footer-wrap-logo {
+    margin: 0;
+  }
+
+  .logo-footer {
+    text-align: left;
+  }
+  .wrap-social-media {
+    margin: 0;
+  }
+
+  .footer-soc-title {
+    text-align: left;
+  }
+
+ /* ===========HEADER========== */
+
+  .menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .contacts {
+    display: block;
+    font-style: normal;
+  }
+
+  .mobile-menu-open {
+    display: none;
+  }
+
+  
 }
 
 /* ========== 768px-1158px ========== */
@@ -99,33 +161,43 @@
     padding-bottom: 188px;
   }
 
+  /* =========FOOTER======== */
+
   .footer-container {
     display: flex;
-}
+    gap: 0;
+    padding-left: 0;
+  }
 
-.footer-wrap-logo {
-  margin-right: 120px;
-  margin-left: 156px;
-  margin-bottom: 0;
-}
+  .footer-wrap-logo {
+    margin-right: 120px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 
-.wrap-social-media {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 80px;
-  margin-left: 0;
-  margin-bottom: 0;
-}
+  .wrap-social-media {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 80px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
 
-.logo-footer {
-  display: inline-block;
-  margin-bottom: 16px;
-  margin-right: 76px;
-}
-.footer-soc-title {
-  text-align: left;
-}
+  .logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+    margin-right: 76px;
+  }
+  .footer-soc-title {
+    text-align: left;
+  }
 
+  .subscribe-wrap {
+    width: 264px;
+    margin: 0;
+    text-align: left;
+  }
 
-
+  
+  
 }
