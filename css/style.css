@@ -308,7 +308,6 @@ color: var(--IRIS);
   display: flex;
   align-items: center;
   max-width: 1440px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: var(--bg-gradient), url(../images/people-office-mob.jpg);
@@ -394,8 +393,8 @@ color: var(--IRIS);
 
 .features-title {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--NAVY-BLUE);
   margin-bottom: 8px;

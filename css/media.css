@@ -203,6 +203,11 @@
     gap: 24px;
   }
 
+  .features-title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
   .features-title::before {
     display: block;
   }
