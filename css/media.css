@@ -11,6 +11,60 @@
     width: 768px;
   }
 
+  /* ===========HEADER========== */
+
+  .menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .contacts {
+    display: block;
+    font-style: normal;
+  }
+
+  .mobile-menu-open {
+    display: none;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-info {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  /* =========HERO SECTION======== */
+
+  .hero-section {
+    background-image: var(--bg-gradient), url(../images/people-office-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: var(--bg-gradient), url(../images/people-office-tablet2x.jpg);
+    }
+  }
+
+  .hero {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+  }
+
+  /* =========FEATURES-SECTION======== */
+
+  .list-item {
+    max-width: 356px;
+  }
+
   /* ===========TEAM SECTION========== */
 
   .team-list {
@@ -27,21 +81,6 @@
   }
   .customers-list {
     gap: 72px 24px;
-  }
-
-  /* =========FEATURES-SECTION======== */
-
-  .list-item {
-    max-width: 356px;
-  }
-
-  /* =========HERO SECTION======== */
-
-  .hero {
-    max-width: 496px;
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
   }
 
   /* =========FOOTER======== */
@@ -85,24 +124,27 @@
     text-align: left;
   }
 
- /* ===========HEADER========== */
+  /* ==========PARTFOLIO========== */
 
-  .menu {
-    display: flex;
-    gap: 40px;
-    align-items: center;
+  .partfolio {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
-  .contacts {
-    display: block;
-    font-style: normal;
+  .partfolio-btn {
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 64px;
   }
 
-  .mobile-menu-open {
-    display: none;
+  .partfolio-item {
+    width: 356px;
   }
 
-  
+  .partfolio-list {
+    gap: 72px 24px;
+    justify-content: inherit;
+  }
 }
 
 /* ========== 768px-1158px ========== */
@@ -110,6 +152,61 @@
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+  }
+
+  /* =========HEADER======== */
+  .contact-list {
+    display: flex;
+    gap: 40px;
+    flex-direction: inherit;
+  }
+
+  .contact-info {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* =========HERO SECTION======== */
+
+  .hero-section {
+    background-image: var(--bg-gradient), url(../images/people-office.jpg);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: var(--bg-gradient), url(../images/people-office2x\ .jpg);
+    }
+  }
+
+  .hero {
+    margin-bottom: 48px;
+  }
+
+  .hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  /* =========FEATURES SECTION======== */
+
+  .features-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .features-title::before {
+    display: block;
+  }
+
+  .section-features {
+    padding-top: 120px;
+    padding-bottom: 0;
+  }
+
+  /* ==========DESCRIPTION SECTION========== */
+
+  .section-description {
+    display: block;
   }
 
   /* ===========TEAM SECTION========== */
@@ -128,37 +225,6 @@
 
   .customers-list {
     gap: 24px;
-  }
-
-  /* ==========DESCRIPTION SECTION========== */
-
-  .section-description {
-    display: block;
-  }
-  /* =========FEATURES SECTION======== */
-  .features-list {
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
-
-  .features-title::before {
-    display: block;
-  }
-
-  .section-features {
-    padding-top: 120px;
-    padding-bottom: 0;
-  }
-
-  /* =========HERO SECTION======== */
-
-  .hero {
-    margin-bottom: 48px;
-  }
-
-  .hero-section {
-    padding-top: 188px;
-    padding-bottom: 188px;
   }
 
   /* =========FOOTER======== */
@@ -198,6 +264,18 @@
     text-align: left;
   }
 
-  
-  
+  /* ==========PARTFOLIO========== */
+
+  .partfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .partfolio-btn {
+    margin-bottom: 72px;
+  }
+
+  .partfolio-list {
+    gap: 48px 24px;
+  }
 }

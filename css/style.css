@@ -54,6 +54,7 @@ img {
 }
 
 /* ============= HEADER ============= */
+
 .page-header {
   height: 72px;
   display: flex;
@@ -72,7 +73,6 @@ img {
 
 .logo-header {
   margin-right: 76px;
-
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -91,6 +91,7 @@ img {
   gap: 40px;
   align-items: center;
 }
+
 /* ==========MOBILE MENU========== */
 
 .mobile-menu-open {
@@ -114,20 +115,9 @@ img {
   height: 100%;
   background-color: #fff;
   z-index: 100;
-  overflow-y: scroll;
   top: 0;
   left: 0;
-
-  opacity: 0;
-  visibility: visible;
-  pointer-events: auto;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-menu .is-open {
-  opacity: 1;
-  visibility: hidden;
-  pointer-events: none;
 }
 
 .mobile-menu-close-button {
@@ -143,7 +133,6 @@ img {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-close-icon {
@@ -195,6 +184,7 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .mobile-menu-list-contact {
   margin-bottom: 48px;
   display: flex;
@@ -202,6 +192,7 @@ img {
   gap: 40px;
   margin-bottom: 48px;
 }
+
 .mobile-menu-adress {
   font-style: normal;
 }
@@ -226,6 +217,7 @@ color: var(--IRIS);
   color: var(--SLATE);
   padding-bottom: 40px;
 }
+
 .mobile-menu-tel:active {
 color: var(--IRIS);
 }
@@ -295,6 +287,7 @@ color: var(--IRIS);
 }
 
 /*============= HERO ============= */
+
 .hero {
   max-width: 320px;
   margin-left: auto;
@@ -318,10 +311,18 @@ color: var(--IRIS);
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--bg-gradient), url(../images/people-office.jpg);
+  background-image: var(--bg-gradient), url(../images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: var(--bg-gradient), url(../images/people-office-mob2x.jpg);
+  }
 }
 
 .modal-btn {
@@ -350,6 +351,7 @@ color: var(--IRIS);
 }
 
 /* ============= 2 SECTION========= */
+
 .section-features {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -384,8 +386,6 @@ color: var(--IRIS);
 }
 
 .features-list {
-  /* display: flex;
-  gap: 24px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -443,8 +443,6 @@ color: var(--IRIS);
   background-color: #f4f4fd;
   padding-top: 96px;
   padding-bottom: 96px;
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
 }
 
 .team-list-item {
@@ -463,12 +461,8 @@ color: var(--IRIS);
   gap: 72px 24px;
 }
 
-.team-content {
-}
-
 .team-name {
   margin-bottom: 8px;
-
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -500,6 +494,7 @@ color: var(--IRIS);
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .team-soc-list {
   display: flex;
   justify-content: center;
@@ -510,6 +505,7 @@ color: var(--IRIS);
   width: 40px;
   height: 40px;
 }
+
 .team-soc-link {
   width: 100%;
   height: 100%;
@@ -531,6 +527,7 @@ color: var(--IRIS);
   padding-top: 96px;
   padding-bottom: 96px;
 }
+
 .customers-item-wrap {
   display: flex;
   justify-content: center;
@@ -549,12 +546,14 @@ color: var(--IRIS);
   text-align: center;
   text-transform: capitalize;
 }
+
 .customers-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px 16px;
 }
+
 .customer-item {
   width: 190px;
   height: 88px;
@@ -583,6 +582,7 @@ color: var(--IRIS);
 }
 
 /* =================== FOOTER =================== */
+
 .footer {
   background-color: var(--NAVY-BLUE);
   padding-top: 100px;
@@ -742,23 +742,26 @@ color: var(--IRIS);
   color: #ffffff;
   padding-left: 16px;
 }
+
 /* =================== PARTFOLIO =================== */
+
 .partfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .partfolio-btn {
-  margin-bottom: 72px;
-
+  margin-bottom: 48px;
   display: flex;
   gap: 24px;
-  justify-content: center;
+  flex-wrap: wrap;
 }
+
 .partfolio-list {
   display: flex;
   gap: 48px 24px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .nav-btn {
