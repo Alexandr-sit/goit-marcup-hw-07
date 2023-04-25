@@ -3,6 +3,12 @@
     width: 428px;
   }
 }
+@media screen and (max-width: 428px) {
+  .modal {
+    width: 95%;
+    min-height: 584px;
+  }
+}
 
 /* ========== 428px-768px ========== */
 
@@ -63,6 +69,9 @@
 
   .list-item {
     max-width: 356px;
+  }
+  .features-title {
+    text-align: left;
   }
 
   /* ===========TEAM SECTION========== */
